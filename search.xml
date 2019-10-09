@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python概述]]></title>
+    <url>%2F2019%2F10%2F09%2FPython%E6%A6%82%E8%BF%B0%2F</url>
+    <content type="text"><![CDATA[Python基础Python概述 计算机语言概述 语言：交流工具，沟通媒介 计算机语言：人跟计算机交流的工具，翻译官 Python是计算机语言的一种 Python编程语言 代码：人类语言，通过代码命令机器，跟机器交流 Python解释器：就是那个担任翻译工作的工具 流程： 写代码 执行：由翻译官（Python解释器）把命令（Code）翻译给机器，同时把机器结果翻译给我们 Python读音问题 Python简史 1989年，Guido Van Rossum 2008：Python3.0诞生 2017：AI元年，Python崛起 Python特点 速度问题 Python跟其它语言的选择问题 Python的应用领域 全能 设计哲学：平衡发展，样样通，简洁明了 Python的执行方式 本质上Python是一堆命令的集合 执行过程是逐行执行，遇到问题即刻终止 12# 打印Hello Worldprint("Hello world") Hello world12]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F10%2F09%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
