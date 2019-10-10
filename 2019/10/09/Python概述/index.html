@@ -100,7 +100,7 @@
 <meta property="og:site_name" content="Nanoha Blog">
 <meta property="og:description" content="Python基础Python概述 计算机语言概述 语言：交流工具，沟通媒介 计算机语言：人跟计算机交流的工具，翻译官 Python是计算机语言的一种 Python编程语言 代码：人类语言，通过代码命令机器，跟机器交流 Python解释器：就是那个担任翻译工作的工具 流程： 写代码 执行：由翻译官（Python解释器）把命令（Code）翻译给机器，同时把机器结果翻译给我们     Python读音问">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-10-09T13:26:45.550Z">
+<meta property="og:updated_time" content="2019-10-10T02:00:55.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python概述">
 <meta name="twitter:description" content="Python基础Python概述 计算机语言概述 语言：交流工具，沟通媒介 计算机语言：人跟计算机交流的工具，翻译官 Python是计算机语言的一种 Python编程语言 代码：人类语言，通过代码命令机器，跟机器交流 Python解释器：就是那个担任翻译工作的工具 流程： 写代码 执行：由翻译官（Python解释器）把命令（Code）翻译给机器，同时把机器结果翻译给我们     Python读音问">
@@ -379,7 +379,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  237
+                  1.5k
                 </span>
               
 
@@ -446,9 +446,195 @@
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打印Hello World</span></span><br><span class="line">print(<span class="string">"Hello world"</span>)</span><br></pre></td></tr></table></figure>
 
-<pre><code>Hello world</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre><code>Hello world</code></pre><h1 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a>环境安装</h1><ul>
+<li>推荐Virtualbox + Ubuntu</li>
+<li>套件推荐Anaconda + pycharm</li>
+<li>如果机器内存大于4G，推荐虚拟机下启动系统</li>
+<li>小于4G，推荐用Windows下Anaconda + pycharm</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 代码的作用</span></span><br><span class="line"><span class="comment"># 1，给人看</span></span><br><span class="line"><span class="comment"># 2，给机器看</span></span><br><span class="line"><span class="comment"># 注释是纯给人看的内容</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"Hello World"</span>)     <span class="comment"># 打印Hello World出来</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">这也是注释</span></span><br><span class="line"><span class="string">可以写很多</span></span><br><span class="line"><span class="string">很多</span></span><br><span class="line"><span class="string">'''</span></span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello World
 
 
+
+
+
+&apos;\n这也是注释\n可以写很多\n很多\n&apos;</code></pre><h1 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h1><ul>
+<li>机器不执行注释内容</li>
+<li>注释一般用自然语言书写</li>
+<li>注释的写法<ul>
+<li>行注释：以#号开头，可以单独行，也可以在某行代码后面</li>
+<li>块注释：好几行代码或者内容，以三个连续单引号或双引号开始和结束，中间任何内容机器都忽略</li>
+</ul>
+</li>
+</ul>
+<h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><ul>
+<li>程序 = 数据结构 + 算法</li>
+<li>变量就是可以重复使用的一个量，或者叫一个代号</li>
+<li>变量命名规则<ul>
+<li>变量命名可以包含数字，大小写字母，下划线或者更多，但是不推荐前三种之外的符号</li>
+<li>不可以以数字开头</li>
+<li>一般在python中，以下划线开头的内容具有特殊含义，不建议使用</li>
+<li>大小写不一样，大小写敏感</li>
+<li>推荐：<ul>
+<li>使用具有固定含义的英文单词或者缩写，srv=server skt=socket，一般以posix命名规则为主</li>
+<li>驼峰命名法<ul>
+<li>名称以单词自动连接，且每个单词首字母大写<ul>
+<li>大驼峰，每个单词第一个字母均大写<ul>
+<li>在python中给类命名使用此法</li>
+<li>MyFirstLove， InOne</li>
+</ul>
+</li>
+<li>小驼峰，类似大驼峰，但第一个字母小写<ul>
+<li>在python中一般给普通变量或者函数命名</li>
+<li>myFirstLove， intOne</li>
+</ul>
+</li>
+<li>posix写法<ul>
+<li>多个单词用下划线连接</li>
+<li>单词全部小写</li>
+<li>my_first_love, int_one</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>保留字和关键字<ul>
+<li>变量命名必须避开，不能跟关键字和保留字重复</li>
+<li>class， def， break， for</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看关键字的方法</span></span><br><span class="line"><span class="keyword">import</span> keyword  <span class="comment"># 引入关键字模块</span></span><br><span class="line"><span class="comment"># 打印出系统全部关键字</span></span><br><span class="line">print(keyword.kwlist)</span><br></pre></td></tr></table></figure>
+
+<pre><code>[&apos;False&apos;, &apos;None&apos;, &apos;True&apos;, &apos;and&apos;, &apos;as&apos;, &apos;assert&apos;, &apos;async&apos;, &apos;await&apos;, &apos;break&apos;, &apos;class&apos;, &apos;continue&apos;, &apos;def&apos;, &apos;del&apos;, &apos;elif&apos;, &apos;else&apos;, &apos;except&apos;, &apos;finally&apos;, &apos;for&apos;, &apos;from&apos;, &apos;global&apos;, &apos;if&apos;, &apos;import&apos;, &apos;in&apos;, &apos;is&apos;, &apos;lambda&apos;, &apos;nonlocal&apos;, &apos;not&apos;, &apos;or&apos;, &apos;pass&apos;, &apos;raise&apos;, &apos;return&apos;, &apos;try&apos;, &apos;while&apos;, &apos;with&apos;, &apos;yield&apos;]</code></pre><h1 id="变量申明"><a href="#变量申明" class="headerlink" title="变量申明"></a>变量申明</h1><ul>
+<li>var_name = var_value</li>
+<li>var1 = var2 = var3 = var_value</li>
+<li>var1, var2, var3 = v1, v2, v3</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义变量age， 把18放入变量age中</span></span><br><span class="line">age = <span class="number">18</span>;</span><br><span class="line">print(age)</span><br><span class="line">print(<span class="number">18</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 给age1， age2， age3 放入同样一个内容或值</span></span><br><span class="line">age1 = age2 = age3 = <span class="number">18</span></span><br><span class="line">print(age1)</span><br><span class="line">print(age2)</span><br><span class="line">print(age3)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 一行内给多个变量赋值</span></span><br><span class="line">age4, age5, age6 = <span class="number">12</span>, <span class="number">21</span>, <span class="number">45</span></span><br><span class="line">print(age4)</span><br><span class="line">print(age5)</span><br><span class="line">print(age6)</span><br></pre></td></tr></table></figure>
+
+<pre><code>18
+18
+18
+18
+18
+12
+21
+45</code></pre><h1 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h1><ul>
+<li>严格意义上讲，python只有一个类型</li>
+<li>标准数据一共六种<ul>
+<li>数字类型Number</li>
+<li>字符串类型str</li>
+<li>列表list</li>
+<li>元组tuple</li>
+<li>字典Dictionary</li>
+<li>集合set</li>
+</ul>
+</li>
+</ul>
+<h1 id="Number数字类型"><a href="#Number数字类型" class="headerlink" title="Number数字类型"></a>Number数字类型</h1><ul>
+<li>数字类型没有大小限制</li>
+</ul>
+<h2 id="整数"><a href="#整数" class="headerlink" title="整数"></a>整数</h2><ul>
+<li>没有小数部分，表示个数的数字</li>
+<li>自然数， 0， 负自然数</li>
+<li>整数分进制<ul>
+<li>二进制<ul>
+<li>计算机常用</li>
+<li>是计算机唯一能直接理解的数字</li>
+<li>表示为0b开头的0，1代码</li>
+<li>例如 0b01101，0b10001</li>
+</ul>
+</li>
+<li>八进制<ul>
+<li>不常用</li>
+<li>以0o开头的包含0-7的数字</li>
+</ul>
+</li>
+<li>十六进制<ul>
+<li>逢十六进一</li>
+<li>其实是每四位二进制表示一位十六进制数</li>
+<li>包含0-9，a-f</li>
+<li>数字上以0x开头表示</li>
+</ul>
+</li>
+<li>十进制</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">num = <span class="number">111</span></span><br><span class="line">print(num)</span><br><span class="line"></span><br><span class="line">num = <span class="number">0b11010</span></span><br><span class="line">print(num)</span><br><span class="line"></span><br><span class="line">num = <span class="number">0o105</span></span><br><span class="line">print(num)</span><br><span class="line"></span><br><span class="line">num = <span class="number">0xff</span></span><br><span class="line">print(num)</span><br></pre></td></tr></table></figure>
+
+<pre><code>111
+26
+69
+255</code></pre><h1 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h1><ul>
+<li>小数</li>
+<li>计算机里面表示浮点数可以有条件省略<ul>
+<li>3.1415</li>
+<li>3.</li>
+<li>0.5</li>
+<li>.5</li>
+</ul>
+</li>
+<li>科学计数法<ul>
+<li>定义跟数学定义一样</li>
+<li>写法是用e/E后面跟整数表示10的指数<ul>
+<li>176.23 == 1.7623e2</li>
+<li>0.876 == 8.76e-1</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">height = <span class="number">156.34</span></span><br><span class="line">print(height)</span><br><span class="line"></span><br><span class="line">weight = <span class="number">.2</span></span><br><span class="line">print(weight)</span><br></pre></td></tr></table></figure>
+
+<pre><code>156.34
+0.2</code></pre><h1 id="复数complex"><a href="#复数complex" class="headerlink" title="复数complex"></a>复数complex</h1><ul>
+<li>定义同数学定义一样</li>
+<li>一个由实部和虚部构成的数字</li>
+<li>虚部用j/J表示<ul>
+<li>5+3j</li>
+<li>3j</li>
+<li>(3j)</li>
+</ul>
+</li>
+</ul>
+<h1 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h1><ul>
+<li>表示真假的值</li>
+<li>只有两个值， True/False</li>
+<li>布尔值可以跟数字直接操作</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 布尔值操作</span></span><br><span class="line"></span><br><span class="line">age = <span class="number">18</span> + <span class="literal">True</span></span><br><span class="line">print(age)</span><br></pre></td></tr></table></figure>
+
+<pre><code>19</code></pre><h1 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h1><ul>
+<li>用来表示一串文字信息</li>
+<li>如何表示<ul>
+<li>单引号</li>
+<li>双引号</li>
+<li>三引号（三个单引号或三个双引号）<ul>
+<li>能够括起多行信息</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>单双引号交错使用</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">love = <span class="string">"I love you"</span></span><br><span class="line">print(love)</span><br><span class="line"></span><br><span class="line">love = <span class="string">"我爱你"</span></span><br><span class="line">print(love)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 单双引号交错使用的例子</span></span><br><span class="line"><span class="comment"># &lt;a style="color:red"&gt;哈哈哈&lt;/a&gt;</span></span><br><span class="line"><span class="comment"># 用引号表示上面字符串</span></span><br><span class="line"></span><br><span class="line">html = <span class="string">'&lt;a style="color:red"&gt;哈哈哈&lt;/a&gt;'</span></span><br><span class="line">htmls = <span class="string">'''</span></span><br><span class="line"><span class="string">I love you</span></span><br><span class="line"><span class="string">哈哈哈哈哈</span></span><br><span class="line"><span class="string">嘿嘿嘿嘿嘿</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line">print(html)</span><br><span class="line">print(htmls)</span><br></pre></td></tr></table></figure>
+
+<pre><code>I love you
+我爱你
+&lt;a style=&quot;color:red&quot;&gt;哈哈哈&lt;/a&gt;
+
+I love you
+哈哈哈哈哈
+嘿嘿嘿嘿嘿</code></pre>
       
     </div>
     
@@ -650,7 +836,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python基础"><span class="nav-number">1.</span> <span class="nav-text">Python基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python概述"><span class="nav-number">1.1.</span> <span class="nav-text">Python概述</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python基础"><span class="nav-number">1.</span> <span class="nav-text">Python基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python概述"><span class="nav-number">1.1.</span> <span class="nav-text">Python概述</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境安装"><span class="nav-number">2.</span> <span class="nav-text">环境安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注释"><span class="nav-number">3.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量"><span class="nav-number">4.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量申明"><span class="nav-number">5.</span> <span class="nav-text">变量申明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#变量类型"><span class="nav-number">6.</span> <span class="nav-text">变量类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Number数字类型"><span class="nav-number">7.</span> <span class="nav-text">Number数字类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#整数"><span class="nav-number">7.1.</span> <span class="nav-text">整数</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮点数"><span class="nav-number">8.</span> <span class="nav-text">浮点数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#复数complex"><span class="nav-number">9.</span> <span class="nav-text">复数complex</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#布尔值"><span class="nav-number">10.</span> <span class="nav-text">布尔值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串"><span class="nav-number">11.</span> <span class="nav-text">字符串</span></a></li></ol></div>
             
 
           </div>
@@ -684,7 +870,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">312</span>
+    <span title="Site words total count">1.5k</span>
   
 </div>
 
