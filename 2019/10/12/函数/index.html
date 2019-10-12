@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+
+
+
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="函数 代码的一种组织形式 一个函数一般完成一项特定的功能 函数使用 函数需要先定义 使用函数，称调用    12345678910# 定义一个函数# 只是定义的话不会执行# 1. def关键字，后跟一个空格# 2. 函数名，自己定义，起名需要遵循命名规则# 3. 后面括号和冒号不能省略，括号内可以有参数# 4. 函数内所有代码缩进def func():    print(&quot;我是一个函数&quot;)prin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数">
+<meta property="og:url" content="http://yoursite.com/2019/10/12/函数/index.html">
+<meta property="og:site_name" content="Nanoha Blog">
+<meta property="og:description" content="函数 代码的一种组织形式 一个函数一般完成一项特定的功能 函数使用 函数需要先定义 使用函数，称调用    12345678910# 定义一个函数# 只是定义的话不会执行# 1. def关键字，后跟一个空格# 2. 函数名，自己定义，起名需要遵循命名规则# 3. 后面括号和冒号不能省略，括号内可以有参数# 4. 函数内所有代码缩进def func():    print(&quot;我是一个函数&quot;)prin">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-10-12T08:10:28.390Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="函数">
+<meta name="twitter:description" content="函数 代码的一种组织形式 一个函数一般完成一项特定的功能 函数使用 函数需要先定义 使用函数，称调用    12345678910# 定义一个函数# 只是定义的话不会执行# 1. def关键字，后跟一个空格# 2. 函数名，自己定义，起名需要遵循命名规则# 3. 后面括号和冒号不能省略，括号内可以有参数# 4. 函数内所有代码缩进def func():    print(&quot;我是一个函数&quot;)prin">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/10/12/函数/">
+
+
+
+
+
+  <title>函数 | Nanoha Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Nanoha Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-message">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-newspaper-o"></i> <br>
+            
+            Message
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/12/函数/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Nanoha Ikaros">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Nanoha Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">函数</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-12T16:09:52+08:00">
+                2019-10-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  3.6k
+                </span>
+              
+
+              
+
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><ul>
+<li>代码的一种组织形式</li>
+<li>一个函数一般完成一项特定的功能</li>
+<li>函数使用<ul>
+<li>函数需要先定义</li>
+<li>使用函数，称调用</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义一个函数</span></span><br><span class="line"><span class="comment"># 只是定义的话不会执行</span></span><br><span class="line"><span class="comment"># 1. def关键字，后跟一个空格</span></span><br><span class="line"><span class="comment"># 2. 函数名，自己定义，起名需要遵循命名规则</span></span><br><span class="line"><span class="comment"># 3. 后面括号和冒号不能省略，括号内可以有参数</span></span><br><span class="line"><span class="comment"># 4. 函数内所有代码缩进</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"我是一个函数"</span>)</span><br><span class="line">print(<span class="string">"嘿嘿嘿嘿嘿"</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>嘿嘿嘿嘿嘿</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 函数的调用</span></span><br><span class="line"><span class="comment"># 直接函数名后跟括号</span></span><br><span class="line">func()</span><br></pre></td></tr></table></figure>
+
+<pre><code>我是一个函数</code></pre><h2 id="函数的参数和返回值"><a href="#函数的参数和返回值" class="headerlink" title="函数的参数和返回值"></a>函数的参数和返回值</h2><ul>
+<li>参数：负责给函数传递一些必要的数据或者信息<ul>
+<li>形参（形式参数）：在函数定义的时候用到的参数没有具体值，只是一个占位的符号，称为形参</li>
+<li>实参（实际参数）：在调用函数的时候输入的值</li>
+</ul>
+</li>
+<li>返回值：函数的执行结果<ul>
+<li>使用return关键字</li>
+<li>如果没有return，默认返回一个None</li>
+<li>函数执行return语句，则无条件返回，即结束函数的执行</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 函数的定义和使用</span></span><br><span class="line"><span class="comment"># 参数person只是一个符号，代表的是调用的时候的某一个数据</span></span><br><span class="line"><span class="comment"># 调用的时候，会用p的值代替函数中所有的person</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(person)</span>:</span></span><br><span class="line">    print(<span class="string">"&#123;&#125;,你好"</span>.format(person))</span><br><span class="line">    print(<span class="string">"hello"</span>)</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">p = <span class="string">"world"</span></span><br><span class="line"></span><br><span class="line">hello(p)</span><br></pre></td></tr></table></figure>
+
+<pre><code>world,你好
+hello</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># return语句的基本使用</span></span><br><span class="line"><span class="comment"># 函数返回一句话</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(person)</span>:</span></span><br><span class="line">    print(<span class="string">"&#123;&#125;, 你好"</span>.format(person))</span><br><span class="line">    print(<span class="string">"hello"</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="string">"hello, &#123;&#125;"</span>.format(person)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p = <span class="string">"world"</span></span><br><span class="line">print(hello(p))</span><br></pre></td></tr></table></figure>
+
+<pre><code>world, 你好
+hello
+hello, world</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">hello</span><span class="params">(person)</span>:</span></span><br><span class="line">    print(<span class="string">"&#123;&#125;, 你好"</span>.format(person))</span><br><span class="line">    <span class="keyword">return</span> <span class="string">"提前结束了"</span></span><br><span class="line">    print(<span class="string">"hello"</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="string">"hello, &#123;&#125;"</span>.format(person)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p = <span class="string">"world"</span></span><br><span class="line">print(hello(p))</span><br></pre></td></tr></table></figure>
+
+<pre><code>world, 你好
+提前结束了</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查找函数帮助文档</span></span><br><span class="line"><span class="comment"># 用help函数</span></span><br><span class="line">help(<span class="keyword">print</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=&apos; &apos;, end=&apos;\n&apos;, file=sys.stdout, flush=False)
+
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.
+    end:   string appended after the last value, default a newline.
+    flush: whether to forcibly flush the stream.</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 九九乘法表</span></span><br><span class="line"><span class="comment"># v1.0</span></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">    <span class="comment"># 打印一行</span></span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> range(<span class="number">1</span>, row + <span class="number">1</span>):</span><br><span class="line">        <span class="comment"># print函数默认打印完成后换行</span></span><br><span class="line">        print(<span class="string">"&#123;&#125;*&#123;&#125;=&#123;:&lt;2&#125;"</span>.format(col, row, col * row), end=<span class="string">" "</span>)</span><br><span class="line">    print()</span><br></pre></td></tr></table></figure>
+
+<pre><code>1*1=1  
+1*2=2  2*2=4  
+1*3=3  2*3=6  3*3=9  
+1*4=4  2*4=8  3*4=12 4*4=16 
+1*5=5  2*5=10 3*5=15 4*5=20 5*5=25 
+1*6=6  2*6=12 3*6=18 4*6=24 5*6=30 6*6=36 
+1*7=7  2*7=14 3*7=21 4*7=28 5*7=35 6*7=42 7*7=49 
+1*8=8  2*8=16 3*8=24 4*8=32 5*8=40 6*8=48 7*8=56 8*8=64 
+1*9=9  2*9=18 3*9=27 4*9=36 5*9=45 6*9=54 7*9=63 8*9=72 9*9=81 </code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义一个函数，打印一行九九乘法表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printLine</span><span class="params">(row)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> col <span class="keyword">in</span> range(<span class="number">1</span>, row + <span class="number">1</span>):</span><br><span class="line">        <span class="comment"># print函数默认打印完成后换行</span></span><br><span class="line">        print(<span class="string">"&#123;&#125;*&#123;&#125;=&#123;:&lt;2&#125;"</span>.format(col, row, col * row), end=<span class="string">" "</span>)</span><br><span class="line">    print()</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 九九乘法表</span></span><br><span class="line"><span class="comment"># v2.0</span></span><br><span class="line"><span class="keyword">for</span> row <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">10</span>):</span><br><span class="line">    printLine(row)</span><br></pre></td></tr></table></figure>
+
+<pre><code>1*1=1  
+1*2=2  2*2=4  
+1*3=3  2*3=6  3*3=9  
+1*4=4  2*4=8  3*4=12 4*4=16 
+1*5=5  2*5=10 3*5=15 4*5=20 5*5=25 
+1*6=6  2*6=12 3*6=18 4*6=24 5*6=30 6*6=36 
+1*7=7  2*7=14 3*7=21 4*7=28 5*7=35 6*7=42 7*7=49 
+1*8=8  2*8=16 3*8=24 4*8=32 5*8=40 6*8=48 7*8=56 8*8=64 
+1*9=9  2*9=18 3*9=27 4*9=36 5*9=45 6*9=54 7*9=63 8*9=72 9*9=81 </code></pre><h2 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h2><ul>
+<li><p>参数分类</p>
+<ul>
+<li>普通参数</li>
+<li>默认参数</li>
+<li>关键字参数</li>
+<li>收集参数</li>
+</ul>
+</li>
+<li><p>普通参数</p>
+<ul>
+<li><p>定义的时候直接定义变量名</p>
+</li>
+<li><p>调用的时候直接把变量或值放入指定位置</p>
+<pre><code>def 函数名（参数1， 参数2，....):
+    函数体
+
+# 调用
+函数名（value1, value2,.......)
+
+# 调用的时候，具体值参考的是位置，按位置赋值</code></pre></li>
+</ul>
+</li>
+<li><p>默认参数</p>
+<ul>
+<li><p>形参带有默认值</p>
+</li>
+<li><p>调用的时候如果没有对相应形参赋值，则使用默认值</p>
+<pre><code>def  func_name(p1=v1, p2=v2..........):
+    func_block
+
+#调用1
+func_name()
+
+# 调用2
+value1= 100
+value2=200
+func_name(value1,value2)</code></pre></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认参数示例</span></span><br><span class="line"><span class="comment"># 报名函数，需要知道学生性别</span></span><br><span class="line"><span class="comment"># 没有特别指定，默认为男</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">reg</span><span class="params">(name, age, gender=<span class="string">'male'</span>)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> gender == <span class="string">'male'</span>:</span><br><span class="line">        print(<span class="string">"&#123;0&#125; is &#123;1&#125;, and he is a good student"</span>.format(name, age))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"&#123;0&#125; is &#123;1&#125;, and she is a good student"</span>.format(name, age))</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 调用默认参数函数示例</span></span><br><span class="line">reg(<span class="string">"xiaoming"</span>, <span class="number">21</span>)</span><br><span class="line">reg(<span class="string">"handuoduo"</span>, <span class="number">20</span>, <span class="string">"female"</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>xiaoming is 21, and he is a good student
+handuoduo is 20, and she is a good student</code></pre><h2 id="关键字参数"><a href="#关键字参数" class="headerlink" title="关键字参数"></a>关键字参数</h2><ul>
+<li><p>语法</p>
+<pre><code>def func(p1=v1, p2=v2.....):
+    func_body
+
+调用函数：
+func(p1=value1, p2=value2.......)</code></pre></li>
+<li><p>比较麻烦，但也有好处</p>
+<ul>
+<li>不容易混淆，一般实参和形参只是按照位置一一对应，容易出错</li>
+<li>使用关键字参数，可以不考虑参数位置</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 关键字参数示例</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(name, age, addr)</span>:</span></span><br><span class="line">    print(<span class="string">"I am a student"</span>)</span><br><span class="line">    print(<span class="string">"我叫&#123;0&#125;,我今年&#123;1&#125;岁了，我住&#123;2&#125;"</span>.format(name, age, addr))</span><br><span class="line">    </span><br><span class="line">n = <span class="string">'胡图图'</span></span><br><span class="line">a = <span class="number">5</span></span><br><span class="line">addr = <span class="string">'翻斗大街翻斗花园二号楼1001室'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 普通参数，只按照位置传递，容易出错</span></span><br><span class="line">stu(a, n, addr)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu_key</span><span class="params">(name=<span class="string">"None"</span>, age=<span class="number">0</span>, addr=<span class="string">"None"</span>)</span>:</span></span><br><span class="line">    print(<span class="string">"I am a student"</span>)</span><br><span class="line">    print(<span class="string">"我叫&#123;0&#125;,我今年&#123;1&#125;岁了，我住&#123;2&#125;"</span>.format(name, age, addr))</span><br><span class="line">    </span><br><span class="line">stu_key(age=a, name=n, addr=addr)</span><br></pre></td></tr></table></figure>
+
+<pre><code>I am a student
+我叫5,我今年胡图图岁了，我住翻斗大街翻斗花园二号楼1001室
+I am a student
+我叫胡图图,我今年5岁了，我住翻斗大街翻斗花园二号楼1001室</code></pre><h2 id="收集参数"><a href="#收集参数" class="headerlink" title="收集参数"></a>收集参数</h2><ul>
+<li><p>把没有位置，不能和定义时的参数位置对应的参数放入一个特定的数据结构中</p>
+</li>
+<li><p>语法：</p>
+<pre><code>def func(*args):
+    func_body
+    按照list使用方式访问args得到传入的参数
+
+调用：
+func(p1, p2, p3, .....)</code></pre></li>
+<li><p>参数名args不是必须这么写，但是推荐使用args</p>
+</li>
+<li><p>参数名args前需要有星号（*）</p>
+</li>
+<li><p>收集参数可以和其它参数共存</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 收集参数代码</span></span><br><span class="line"><span class="comment"># 函数模拟一个学生进行自我介绍，但具体内容不清楚</span></span><br><span class="line"><span class="comment"># 把args看做一个list</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(*args)</span>:</span></span><br><span class="line">    print(<span class="string">"Hello 大家好，我自我介绍一下，简单说两句："</span>)</span><br><span class="line">    <span class="comment"># type函数作用是检测变量类型</span></span><br><span class="line">    print(type(args))</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> args:</span><br><span class="line">        print(item)</span><br><span class="line">        </span><br><span class="line">stu(<span class="string">"胡图图"</span>, <span class="string">"今年5岁了"</span>, <span class="string">"翻斗大街翻斗花园二号楼1001室"</span>)</span><br><span class="line">stu(<span class="string">"张小丽"</span>)</span><br><span class="line">stu(<span class="string">"胡英俊"</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello 大家好，我自我介绍一下，简单说两句：
+&lt;class &apos;tuple&apos;&gt;
+胡图图
+今年5岁了
+翻斗大街翻斗花园二号楼1001室
+Hello 大家好，我自我介绍一下，简单说两句：
+&lt;class &apos;tuple&apos;&gt;
+张小丽
+Hello 大家好，我自我介绍一下，简单说两句：
+&lt;class &apos;tuple&apos;&gt;
+胡英俊</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 收集参数示例</span></span><br><span class="line"><span class="comment"># 说明收集参数可以不带任何实参调用，此时收集参数为空tuple</span></span><br><span class="line">stu()</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello 大家好，我自我介绍一下，简单说两句：
+&lt;class &apos;tuple&apos;&gt;</code></pre><h2 id="收集关键字参数"><a href="#收集关键字参数" class="headerlink" title="收集关键字参数"></a>收集关键字参数</h2><ul>
+<li><p>把关键字参数安字典格式存入收集参数</p>
+</li>
+<li><p>语法：</p>
+<pre><code>def func( **kwargs):
+    func_body
+
+# 调用：
+func(p1=v1, p2=v2, p3=v3........)</code></pre></li>
+<li><p>推荐使用kwargs</p>
+</li>
+<li><p>调用的时候，把多余的关键字参数放入kwargs</p>
+</li>
+<li><p>访问kwargs需要按字典格式访问</p>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 收集参数示例</span></span><br><span class="line"><span class="comment"># 自我介绍，调用的时候需要使用关键字参数调用</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(**kwargs)</span>:</span></span><br><span class="line">    <span class="comment"># 在函数同内对于kwargs的使用不带星号（**）</span></span><br><span class="line">    print(<span class="string">"Hello 大家好，我先自我介绍一下："</span>)</span><br><span class="line">    print(type(kwargs))</span><br><span class="line">    <span class="comment"># 对于字典的访问，python2和python3有区别</span></span><br><span class="line">    <span class="keyword">for</span> k, v <span class="keyword">in</span> kwargs.items():</span><br><span class="line">        print(k, <span class="string">'----'</span>, v)</span><br><span class="line">        </span><br><span class="line">stu(name=<span class="string">'胡图图'</span>, gae=<span class="number">5</span>, addr=<span class="string">'翻斗大街翻斗花园二号楼1001室'</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'*'</span> * <span class="number">30</span>)</span><br><span class="line"></span><br><span class="line">stu(name=<span class="string">'胡英俊'</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello 大家好，我先自我介绍一下：
+&lt;class &apos;dict&apos;&gt;
+name ---- 胡图图
+gae ---- 5
+addr ---- 翻斗大街翻斗花园二号楼1001室
+******************************
+Hello 大家好，我先自我介绍一下：
+&lt;class &apos;dict&apos;&gt;
+name ---- 胡英俊</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 收集参数可以为空</span></span><br><span class="line">stu()</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello 大家好，我先自我介绍一下：
+&lt;class &apos;dict&apos;&gt;</code></pre><h2 id="收集参数混合调用的顺序问题"><a href="#收集参数混合调用的顺序问题" class="headerlink" title="收集参数混合调用的顺序问题"></a>收集参数混合调用的顺序问题</h2><ul>
+<li>收集参数，关键字参数，普通参数可以混合使用</li>
+<li>使用规则，普通参数和关键字参数优先</li>
+<li>定义的时候一般找普通参数，关键字参数，收集参数tuple，收集参数dict</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 收集参数混合调用示例</span></span><br><span class="line"><span class="comment"># stu模拟一个学生的自我介绍</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(name, age, *args, hobby=<span class="string">'没有'</span>, **kwargs)</span>:</span></span><br><span class="line">    print(<span class="string">"Hello 大家好"</span>)</span><br><span class="line">    print(<span class="string">"我叫&#123;0&#125;,我今年&#123;1&#125;岁。"</span>.format(name, age))</span><br><span class="line">    <span class="keyword">if</span> hobby == <span class="string">'没有'</span>:</span><br><span class="line">        print(<span class="string">"我没有爱好"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"我的爱好是&#123;&#125;"</span>.format(hobby))</span><br><span class="line">    print(<span class="string">'*'</span> * <span class="number">30</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> args:</span><br><span class="line">        print(i)</span><br><span class="line">        </span><br><span class="line">    print(<span class="string">'*'</span> * <span class="number">30</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> k, v <span class="keyword">in</span> kwargs.items():</span><br><span class="line">        print(k, <span class="string">'---'</span>, v)</span><br><span class="line">        </span><br><span class="line">name = <span class="string">'胡图图'</span></span><br><span class="line">age = <span class="number">5</span></span><br><span class="line"></span><br><span class="line">stu(name, age)</span><br><span class="line"></span><br><span class="line">stu(name, age, hobby=<span class="string">'吃'</span>)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Hello 大家好
+我叫胡图图,我今年5岁。
+我没有爱好
+******************************
+******************************
+Hello 大家好
+我叫胡图图,我今年5岁。
+我的爱好是吃
+******************************
+******************************</code></pre><h2 id="收集参数的解包"><a href="#收集参数的解包" class="headerlink" title="收集参数的解包"></a>收集参数的解包</h2><ul>
+<li>把参数放入列表或者字典中，直接把list/dict中的值放入收集参数中</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 收集参数的解包</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(*args)</span>:</span></span><br><span class="line">    print(<span class="string">'哈哈哈哈哈'</span>)</span><br><span class="line">    <span class="comment"># n用来表示循环次数</span></span><br><span class="line">    <span class="comment"># 主要用来调试</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> args:</span><br><span class="line">        print(type(i))</span><br><span class="line">        print(n)</span><br><span class="line">        n += <span class="number">1</span></span><br><span class="line">        print(i)</span><br><span class="line">        </span><br><span class="line"><span class="comment">#stu("hututu", "zhangxiaoli", "huyingjun", 5)</span></span><br><span class="line"></span><br><span class="line">l = [<span class="string">"hututu"</span>, <span class="string">"zhangxiaoli"</span>, <span class="string">"huyingjun"</span>]</span><br><span class="line"></span><br><span class="line">stu(l)</span><br><span class="line"></span><br><span class="line">print(<span class="string">'*'</span> * <span class="number">30</span>)</span><br><span class="line"></span><br><span class="line">stu(*l)</span><br></pre></td></tr></table></figure>
+
+<pre><code>哈哈哈哈哈
+&lt;class &apos;list&apos;&gt;
+0
+[&apos;hututu&apos;, &apos;zhangxiaoli&apos;, &apos;huyingjun&apos;]
+******************************
+哈哈哈哈哈
+&lt;class &apos;str&apos;&gt;
+0
+hututu
+&lt;class &apos;str&apos;&gt;
+1
+zhangxiaoli
+&lt;class &apos;str&apos;&gt;
+2
+huyingjun</code></pre><ul>
+<li>同理，dict类型收集参数一样可以解包，对dict类型进行解包需要用两个星号（**）</li>
+</ul>
+<h2 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h2><ul>
+<li>函数和过程的区别<br>  -有无返回值</li>
+<li>需要用return显示放回内容</li>
+<li>如果没有返回，则默认返回None</li>
+<li>推荐写法，无论有无返回值，最后都要以return结束</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 返回值示例</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func_1</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"有返回值"</span>)</span><br><span class="line">    <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func_2</span><span class="params">()</span>:</span></span><br><span class="line">    print(<span class="string">"没有返回值"</span>)</span><br><span class="line">    </span><br><span class="line">f1 = func_1()</span><br><span class="line">print(f1)</span><br><span class="line"></span><br><span class="line">f2 = func_2()</span><br><span class="line">print(f2)</span><br></pre></td></tr></table></figure>
+
+<pre><code>有返回值
+1
+没有返回值
+None</code></pre><h2 id="函数文档"><a href="#函数文档" class="headerlink" title="函数文档"></a>函数文档</h2><ul>
+<li>函数文档的作用是对当前函数提供相关使用的参考信息</li>
+<li>文档的写法：<ul>
+<li>在函数内部开始的第一行使用三引号字符串定义</li>
+</ul>
+</li>
+<li>文档的查看<ul>
+<li>使用help函数，例如help(print)</li>
+<li>使用doc查看</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文档示例</span></span><br><span class="line"><span class="comment"># 函数stu是模拟学生的自我介绍的内容</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(name, age, *args)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    这是文档说明</span></span><br><span class="line"><span class="string">    这是文档说明</span></span><br><span class="line"><span class="string">    '''</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看函数文档</span></span><br><span class="line">help(stu)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Help on function stu in module __main__:
+
+stu(name, age, *args)
+    这是文档说明
+    这是文档说明</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stu.__doc__</span><br></pre></td></tr></table></figure>
+
+<pre><code>&apos;\n    这是文档说明\n    这是文档说明\n    &apos;</code></pre><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu</span><span class="params">(name, age)</span>:</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    这是文档的文字内容</span></span><br><span class="line"><span class="string">    :param name: 表示学生的姓名</span></span><br><span class="line"><span class="string">    :param age: 表示学生的年龄</span></span><br><span class="line"><span class="string">    :return: 此函数没有返回值</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">print(help(stu))</span><br><span class="line"></span><br><span class="line">print(<span class="string">"*"</span> * <span class="number">20</span>)</span><br><span class="line"></span><br><span class="line">print(stu.__doc__)</span><br></pre></td></tr></table></figure>
+
+<pre><code>Help on function stu in module __main__:
+
+stu(name, age)
+    这是文档的文字内容
+    :param name: 表示学生的姓名
+    :param age: 表示学生的年龄
+    :return: 此函数没有返回值
+
+None
+********************
+
+    这是文档的文字内容
+    :param name: 表示学生的姓名
+    :param age: 表示学生的年龄
+    :return: 此函数没有返回值</code></pre><h2 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h2><ul>
+<li>变量有作用范围的限制</li>
+<li>分类：按照作用域分类<ul>
+<li>全局（global）：在函数外部定义</li>
+<li>局部（local）：在函数内部定义</li>
+</ul>
+</li>
+<li>变量的作用范围：<ul>
+<li>全局变量：在整个全局范围都有效</li>
+<li>全局变量在局部可以使用（即函数内部可以访问函数外部定义的变量）</li>
+<li>局部变量在局部范围可以使用</li>
+<li>局部变量在全局范围无法使用</li>
+</ul>
+</li>
+<li>LEGB原则<ul>
+<li>L（Local）局部作用域</li>
+<li>E（Enclosing function locale）外部嵌套函数作用域</li>
+<li>G（Global module）函数定义所在模块作用域</li>
+<li>B（Buildin）python内置模块的作用域</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 认为a1是全局的</span></span><br><span class="line">a1 = <span class="number">100</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    print(a1)</span><br><span class="line">    print(<span class="string">"I am in fun"</span>)</span><br><span class="line">    <span class="comment"># a2的作用范围是fun</span></span><br><span class="line">    a2 = <span class="number">99</span></span><br><span class="line">    print(a2)</span><br><span class="line">    </span><br><span class="line">print(a1)</span><br><span class="line">fun()</span><br><span class="line">print(a2)</span><br></pre></td></tr></table></figure>
+
+<pre><code>100
+100
+I am in fun
+99
+
+
+
+---------------------------------------------------------------------------
+
+NameError                                 Traceback (most recent call last)
+
+&lt;ipython-input-25-686ce1e099ee&gt; in &lt;module&gt;()
+     11 print(a1)
+     12 fun()
+---&gt; 13 print(a2)
+
+
+NameError: name &apos;a2&apos; is not defined</code></pre><h2 id="把局部变量变为全局变量"><a href="#把局部变量变为全局变量" class="headerlink" title="把局部变量变为全局变量"></a>把局部变量变为全局变量</h2><ul>
+<li>使用global</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">global</span> b1</span><br><span class="line">    b1 = <span class="number">100</span></span><br><span class="line">    print(b1)</span><br><span class="line">    print(<span class="string">"I am in fun"</span>)</span><br><span class="line">    b2 = <span class="number">99</span></span><br><span class="line">    print(b2)</span><br><span class="line"></span><br><span class="line"><span class="comment"># print(b1)</span></span><br><span class="line"><span class="comment"># error</span></span><br><span class="line"></span><br><span class="line">fun()</span><br><span class="line">print(b1)</span><br></pre></td></tr></table></figure>
+
+<pre><code>100
+I am in fun
+99
+100</code></pre><h2 id="globals，-locals函数"><a href="#globals，-locals函数" class="headerlink" title="globals， locals函数"></a>globals， locals函数</h2><ul>
+<li>可以通过globals和locals显示出局部变量和全局变量</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># globals和locals是内建函数</span></span><br><span class="line">a = <span class="number">1</span></span><br><span class="line">b = <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">(c, d)</span>:</span></span><br><span class="line">    e = <span class="number">111</span></span><br><span class="line">    print(<span class="string">"Locals=&#123;0&#125;"</span>.format(locals()))</span><br><span class="line">    print(<span class="string">"Globals=&#123;0&#125;"</span>.format(globals()))</span><br><span class="line">    </span><br><span class="line">fun(<span class="number">100</span>, <span class="number">200</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="eval-函数"><a href="#eval-函数" class="headerlink" title="eval()函数"></a>eval()函数</h2><ul>
+<li>把一个字符串当成一个表达式来执行，放回表达式执行后的结果</li>
+<li>语法：<pre><code>eval(string_code, globals=None, locals=None)</code></pre></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># eval()示例</span></span><br><span class="line">x = <span class="number">100</span> </span><br><span class="line">y = <span class="number">200</span></span><br><span class="line"><span class="comment"># 执行x + y</span></span><br><span class="line"><span class="comment"># z = x + y</span></span><br><span class="line">z1 = x + y</span><br><span class="line">z2 = eval(<span class="string">"x+y"</span>)</span><br><span class="line"></span><br><span class="line">print(z1)</span><br><span class="line">print(z2)</span><br></pre></td></tr></table></figure>
+
+<pre><code>300
+300</code></pre><h2 id="exec-函数"><a href="#exec-函数" class="headerlink" title="exec()函数"></a>exec()函数</h2><ul>
+<li>跟eval()功能类似，但是不返回结果</li>
+<li>语法：<pre><code>exec(string_code, globals=None, locals=None)</code></pre></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># exec()示例</span></span><br><span class="line">x = <span class="number">100</span> </span><br><span class="line">y = <span class="number">200</span></span><br><span class="line"><span class="comment"># 执行x + y</span></span><br><span class="line"><span class="comment"># z = x + y</span></span><br><span class="line">z1 = x + y</span><br><span class="line"><span class="comment"># 注意字符串中引号，比对exec()执行结果和代码执行结果</span></span><br><span class="line">z2 = exec(<span class="string">"print('x+y:', x+y)"</span>)</span><br><span class="line"></span><br><span class="line">print(z1)</span><br><span class="line">print(z2)</span><br></pre></td></tr></table></figure>
+
+<pre><code>x+y: 300
+300
+None</code></pre><h2 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a>递归函数</h2><ul>
+<li>函数直接或间接调用自身</li>
+<li>优点：简洁，容易理解</li>
+<li>缺点：对递归深度有限制，消耗资源大</li>
+<li>python对递归深度有限制，超过会报错</li>
+<li>在写递归程序的时候，一定要注意结束条件</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 递归调用深度限制代码</span></span><br><span class="line"></span><br><span class="line">x = <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">global</span> x</span><br><span class="line">    x += <span class="number">1</span></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="comment"># 递归，调用自己</span></span><br><span class="line">    fun()</span><br><span class="line">    </span><br><span class="line">fun()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 斐波那契数列</span></span><br><span class="line"><span class="comment"># 一列数字，第一个值是1， 第二个也是1， 从第三个开始，每一个数字的值等于前两个数字出现的值的和</span></span><br><span class="line"><span class="comment"># 数学公式为： f(1) = 1, f(2) = 1, f(n) = f(n-1) + f(n-2)</span></span><br><span class="line"><span class="comment"># 例如： 1,1，2，3,5,8,13...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># n表示求第n个数子的斐波那契数列的值</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fib</span><span class="params">(n)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> n &lt;= <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'error'</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">1</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">2</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> fib(n<span class="number">-1</span>) + fib(n<span class="number">-2</span>)</span><br><span class="line"></span><br><span class="line">print(fib(<span class="number">-5</span>))</span><br><span class="line">print(fib(<span class="number">10</span>))</span><br></pre></td></tr></table></figure>
+
+<pre><code>error
+55</code></pre>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Nanoha Ikaros
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://yoursite.com/2019/10/12/函数/" title="函数">http://yoursite.com/2019/10/12/函数/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/11/程序结构/" rel="next" title="程序结构">
+                <i class="fa fa-chevron-left"></i> 程序结构
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript">
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Nanoha Ikaros">
+            
+              <p class="site-author-name" itemprop="name">Nanoha Ikaros</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/nanohaikaros" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#函数"><span class="nav-number">1.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#函数的参数和返回值"><span class="nav-number">1.1.</span> <span class="nav-text">函数的参数和返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数参数"><span class="nav-number">1.2.</span> <span class="nav-text">函数参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关键字参数"><span class="nav-number">1.3.</span> <span class="nav-text">关键字参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收集参数"><span class="nav-number">1.4.</span> <span class="nav-text">收集参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收集关键字参数"><span class="nav-number">1.5.</span> <span class="nav-text">收集关键字参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收集参数混合调用的顺序问题"><span class="nav-number">1.6.</span> <span class="nav-text">收集参数混合调用的顺序问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#收集参数的解包"><span class="nav-number">1.7.</span> <span class="nav-text">收集参数的解包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#返回值"><span class="nav-number">1.8.</span> <span class="nav-text">返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数文档"><span class="nav-number">1.9.</span> <span class="nav-text">函数文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变量作用域"><span class="nav-number">1.10.</span> <span class="nav-text">变量作用域</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#把局部变量变为全局变量"><span class="nav-number">1.11.</span> <span class="nav-text">把局部变量变为全局变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#globals，-locals函数"><span class="nav-number">1.12.</span> <span class="nav-text">globals， locals函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#eval-函数"><span class="nav-number">1.13.</span> <span class="nav-text">eval()函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exec-函数"><span class="nav-number">1.14.</span> <span class="nav-text">exec()函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#递归函数"><span class="nav-number">1.15.</span> <span class="nav-text">递归函数</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Nanoha Ikaros</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">8.2k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
